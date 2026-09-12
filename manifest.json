@@ -1,0 +1,15 @@
+{
+  "name": "دانش فنی پایه — پودمان ۱",
+  "short_name": "پودمان ۱",
+  "description": "مبانی برق و مدارهای الکتریکی — ۹ جلسه",
+  "lang": "fa",
+  "dir": "rtl",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0b1220",
+  "theme_color": "#0ea5e9",
+  "categories": ["education"],
+  "icons": []
+}
