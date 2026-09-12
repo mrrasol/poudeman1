@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="theme-color" content="#0ea5e9" />
+<meta name="description" content="پودمان اول دانش فنی پایه — مبانی برق و مدارهای الکتریکی" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="apple-mobile-web-app-title" content="پودمان ۱" />
+<title>دانش فنی پایه — پودمان ۱</title>
+<link rel="manifest" href="manifest.json" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="topbar">
+  <button id="menuBtn" aria-label="منو">☰</button>
+  <h1 id="pageTitle">دانش فنی پایه — پودمان ۱</h1>
+  <button id="themeBtn" aria-label="حالت شب">🌙</button>
+</header>
+
+<div class="progress"><div id="progressBar"></div></div>
+
+<aside id="sidebar" class="sidebar">
+  <div class="sidebar-header">
+    <h2>فهرست</h2>
+    <button id="closeSidebar" aria-label="بستن">✕</button>
+  </div>
+  <nav>
+    <ul id="lessonList"></ul>
+    <hr />
+    <ul>
+      <li><a href="#" data-page="tools">🧮 ابزارها</a></li>
+      <li><a href="#" data-page="flash">🧠 فلش‌کارت</a></li>
+      <li><a href="#" data-page="quiz">📝 آزمون پایانی</a></li>
+      <li><a href="#" data-page="about">ℹ️ درباره</a></li>
+    </ul>
+  </nav>
+</aside>
+
+<div id="overlay" class="overlay"></div>
+
+<main id="content"></main>
+
+<footer class="navbar">
+  <button id="prevBtn">◀ قبلی</button>
+  <span id="lessonCounter">۱ از ۹</span>
+  <button id="nextBtn">بعدی ▶</button>
+</footer>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+<script>
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker.register("./sw.js").catch(console.error);
+  });
+}
+</script>
+</body>
+</html>
